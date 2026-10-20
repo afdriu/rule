@@ -1,0 +1,117 @@
+# ============================================================
+# Quantumult X 分流规则 · 广告/追踪拦截（优化版）
+# 策略：全部 reject
+# ============================================================
+
+
+# ------------------------------------------------------------
+# HOST-KEYWORD · 通用关键词（3 条）
+# 只保留真正的"词根"型关键词，它们天然是子串语义
+# ------------------------------------------------------------
+host-keyword, adservice
+host-keyword, adsdk
+host-keyword, adtrack
+
+
+# ------------------------------------------------------------
+# HOST-SUFFIX · 短剧平台（1 条，覆盖全部子域）
+# ------------------------------------------------------------
+host-suffix, redfruitdrama.com
+
+
+# ------------------------------------------------------------
+# HOST-SUFFIX · 字节跳动 / 穿山甲 / 今日头条
+# 说明：api-access.pangolin-sdk-toutiao.com 已被
+#       pangolin-sdk-toutiao.com 覆盖，已删除
+# ------------------------------------------------------------
+host-suffix, log.snssdk.com
+host-suffix, mon.snssdk.com
+host-suffix, i.snssdk.com
+host-suffix, vas-lf-x.snssdk.com
+host-suffix, track.toutiaoapi.com
+host-suffix, ad.toutiao.com
+host-suffix, ad.bytedance.com
+host-suffix, pglstatp-toutiao.com
+host-suffix, pangolin-sdk-toutiao.com
+
+
+# ------------------------------------------------------------
+# HOST-SUFFIX · 腾讯系
+# ------------------------------------------------------------
+host-suffix, sdkconfig.qq.com
+host-suffix, ad.qq.com
+host-suffix, tracking.qq.com
+host-suffix, bugly.qq.com
+host-suffix, adstats.tencentmusic.com
+
+
+# ------------------------------------------------------------
+# HOST-SUFFIX · 阿里 / 友盟
+# ------------------------------------------------------------
+host-suffix, umeng.com
+host-suffix, umtrack.com
+
+
+# ------------------------------------------------------------
+# HOST-SUFFIX · 百度
+# ------------------------------------------------------------
+host-suffix, adx.baidu.com
+host-suffix, mobads.baidu.com
+host-suffix, wn.pos.baidu.com
+
+
+# ------------------------------------------------------------
+# HOST-SUFFIX · 快手 / 番茄小说
+# ------------------------------------------------------------
+host-suffix, gdfp.kuaishou.com
+host-suffix, log-sdk.gifshow.com
+host-suffix, ad.partner.gifshow.com
+host-suffix, api.e.kuaishou.com
+host-suffix, fqnovelpic.com
+
+
+# ------------------------------------------------------------
+# HOST-SUFFIX · 海外广告网络
+ ------------------------------------------------------------
+host-suffix, app-measurement.com
+host-suffix, doubleclick.net
+host-suffix, googlesyndication.com
+
+
+# ------------------------------------------------------------
+# HOST-SUFFIX · 小说推广 / 借贷 / CDN 分发
+# ------------------------------------------------------------
+host-suffix, ad.qznovelvod.com
+host-suffix, ad-sign.byteimg.com
+host-suffix, daikuan.360.cn
+host-suffix, jinrong.360.cn
+host-suffix, xjietiao.com
+host-suffix, v.smtcdns.com
+
+
+# --- 巨量引擎 / 穿山甲备用域 ---
+host-suffix, oceanengine.com
+host-suffix, ad.oceanengine.com
+host-suffix, pangolin-sdk-toutiao-b.com
+
+# --- 腾讯广点通 ---
+host-suffix, e.qq.com
+host-suffix, gdt.qq.com
+host-suffix, adsmind.gdtimg.com
+
+# --- 阿里妈妈 ---
+host-suffix, tanx.com
+host-suffix, alimama.com
+host-suffix, mmstat.com
+
+# --- 百度联盟 ---
+host-suffix, cpro.baidu.com
+host-suffix, pos.baidu.com
+
+# --- 快手广告 ---
+host-suffix, ad.kuaishou.com
+host-suffix, adweb.kuaishou.com
+
+# --- 友盟其它域（⚠️ 含推送/APM，拦了可能影响 App 消息推送）---
+host-suffix, umeng.co
+host-suffix, umengcloud.com
