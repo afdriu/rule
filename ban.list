@@ -21,8 +21,6 @@ host-suffix, redfruitdrama.com
 
 # ------------------------------------------------------------
 # HOST-SUFFIX · 字节跳动 / 穿山甲 / 今日头条
-# 说明：api-access.pangolin-sdk-toutiao.com 已被
-#       pangolin-sdk-toutiao.com 覆盖，已删除
 # ------------------------------------------------------------
 host-suffix, log.snssdk.com
 host-suffix, mon.snssdk.com
